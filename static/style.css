@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    margin: 0 auto; /* Centers the block element horizontally if it has a width */
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center; /* Aligns children (input and button) on the main-axis, which is horizontal by default */
+    align-items: center; /* Aligns children on the cross-axis, which is vertical by default */
+    gap: 10px; /* Optional: Adds some space between the input and button */
+    flex-direction: row; /* Optional: This is the default value, ensuring the items are laid out in a row */
+    margin: 20px auto; /* Provides space above and below the container and centers it horizontally */
+}
+
+
+.history-container {
+    min-height: 70vh;
+    max-height: 70vh; /* Adjust the maximum height as desired */
+    overflow-y: auto; /* Add a vertical scrollbar when necessary */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%; /* Adjust width as desired */
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd; /* This will add a light grey border around the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

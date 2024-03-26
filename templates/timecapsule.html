@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Capsule</title>
+</head>
+<body>
+    <h1>Time Capsule: Explore History</h1>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <div class="centered-container">
+        <input type="number" id="yearInput" placeholder="Enter a year" min="1" max="2023">
+        <button onclick="fetchHistoricalInfo()">Explore</button>
+    </div>
+    <div id="historyContainer" class="history-container"></div>
+
+    <script type="module" src="/static/timeCapsule.js"></script>
+</body>
+</html>
