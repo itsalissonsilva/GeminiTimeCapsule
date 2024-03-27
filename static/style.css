@@ -1,5 +1,16 @@
+body {
+    background-color: #333; /* gray background color */
+    /* ... other styles ... */
+}
+
+
 h1 {
     text-align: center;
+    font-size: 3vw; /* Sets the font size to 5% of the viewport's width */
+    /* If the text gets too small on narrow viewports, you can combine vw with min-font-size */
+    font-size: clamp(1.5rem, 5vw, 3rem); /* This ensures that the font size is never smaller than 1.5rem and never larger than 3rem */
+    color: white;
+    font-family: 'Playfair Display', serif;
     margin: 0 auto; /* Centers the block element horizontally if it has a width */
 }
 
@@ -20,8 +31,39 @@ h1 {
     padding: 20px;
     margin: 20px auto;
     width: 80%; /* Adjust width as desired */
-    background-color: #fff;
+    background-color:  #FFFF;
     border-radius: 4px;
-    border: 1px solid #ddd; /* This will add a light grey border around the container */
+    border-top: 2px solid #4285F4;    /* Google blue */
+    border-right: 2px solid #DB4437;  /* Google red */
+    border-bottom: 2px solid #F4B400; /* Google yellow */
+    border-left: 2px solid #0F9D58;   /* Google green */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Verdana', serif;
 }
+
+#yearInput {
+    width: 100px;
+    border-style: solid; /* Required to apply individual border colors */
+    border-top-color: #4285F4; /* Blue */
+    border-right-color: #EA4335; /* Red */
+    border-bottom-color: #FBBC05; /* Yellow */
+    border-left-color: #34A853; /* Green */
+    border-width: 2px; /* Adjust the width of the borders as needed */
+    padding: 8px; /* Provide some padding inside the input */
+    border-radius: 4px; /* Optional: if you want rounded corners */
+}
+
+#exploreButton {
+    border-width: 2px; /* Adjust the width of the borders as needed */
+    padding: 8px; /* Provide some padding inside the input */
+    border-radius: 4px; /* Optional: if you want rounded corners */
+}
+
+#credits {
+    margin: 20px auto;
+    width: 80%; /* Adjust width as desired */
+    color: gray;
+    text-align: center;
+}
+
+hr { background-color: gray; height: 1px; border: 0; }

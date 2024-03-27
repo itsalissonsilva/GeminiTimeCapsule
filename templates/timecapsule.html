@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Time Capsule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Time Capsule: Explore History</h1>
     <link rel="stylesheet" type="text/css" href="/static/style.css">
     <div class="centered-container">
         <input type="number" id="yearInput" placeholder="Enter a year" min="1" max="2023">
-        <button onclick="fetchHistoricalInfo()">Explore</button>
+        <button onclick="fetchHistoricalInfo()" id="exploreButton">Explore</button>
     </div>
     <div id="historyContainer" class="history-container"></div>
+    <div id="credits">
+    <hr>
+    <p>Built with Gemini Pro 1.5 by github.com/itsalissonsilva</p>    
+    </div>
 
     <script type="module" src="/static/timeCapsule.js"></script>
 </body>
+
 </html>
